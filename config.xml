@@ -16,6 +16,7 @@
 <access origin="*" />
 <allow-intent href="*" />
 <allow-navigation href="*" />
+
 <allow-navigation href="*://*.mltaxi.ge/*" />
  <platform name="android">
         <preference name="android-minSdkVersion" value="18" />
@@ -76,7 +77,7 @@
 	<gap:plugin name="cordova-plugin-statusbar" source="npm" />
 	<gap:plugin name="cordova-plugin-inappbrowser"  source="npm" />
 	<gap:plugin name="cordova-plugin-whitelist" source="npm" />
-	<feature name="http://api.phonegap.com/1.0/file" />
+
 
 	<gap:plugin name="cordova-plugin-request-location-accuracy" source="npm" />
 	<plugin name="cordova-plugin-globalization" source="npm" />
