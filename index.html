@@ -46,7 +46,7 @@ document.addEventListener("deviceready", onDeviceReady, false);
 
 function StartWebView()
 	{
-	var url='https://mltaxi.ge/ilia/?myid='+Math.random()*100000000+'&lat='+MyLat+'&lng='+MyLong;
+	var url='http://mltaxi.ge/ilia/?myid='+Math.random()*100000000+'&lat='+MyLat+'&lng='+MyLong;
 	console.log(url);
 	//ref = cordova.InAppBrowser.open(url, '_system', 'location=no, clearcache=yes');
 	window.location=url;
