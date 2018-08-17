@@ -59,7 +59,7 @@ Ilia State University Alibi App
  
     <plugins>
 
-    </plugins>
+
 
 
 
@@ -87,7 +87,7 @@ Ilia State University Alibi App
 	<plugin name="cordova-plugin-dialogs" spec="^1.3.4"/>
 
 	<plugin name="cordova-android-support-gradle-release" spec="^1.1.1">
-    <variable name="ANDROID_SUPPORT_VERSION" value="26.0.1" />
-</plugin>
-
+		<variable name="ANDROID_SUPPORT_VERSION" value="26.0.1" />
+	</plugin>
+    </plugins>
 </widget>
