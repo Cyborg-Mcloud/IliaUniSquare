@@ -3,8 +3,8 @@
 <widget xmlns     = "http://www.w3.org/ns/widgets"
 		xmlns:gap = "http://phonegap.com/ns/1.0"
         id        = "com.designge.iliauni"
-	    versionCode="8" 
-        version   = "0.0.8"
+	    versionCode="9" 
+        version   = "1.0.0"
 		package="com.designge.iliauni"
 		xmlns:android="http://schemas.android.com/apk/res/android">
     <name>Alibi</name>
@@ -71,6 +71,10 @@
 
 	
     </platform>
+
+	<gap:config-file platform="ios" parent="CFBundleShortVersionString">
+    <string>100</string>
+</gap:config-file>
 
 <preference name="android-build-tool" value="gradle" /> 
 <!--<preference name="StatusBarOverlaysWebView" value="true" />-->
