@@ -3,8 +3,8 @@
 <widget xmlns     = "http://www.w3.org/ns/widgets"
 		xmlns:gap = "http://phonegap.com/ns/1.0"
         id        = "com.designge.iliauni"
-	    versionCode="9" 
-        version   = "1.0.0"
+	    versionCode="10" 
+        version   = "1.5.1"
 		package="com.designge.iliauni"
 		xmlns:android="http://schemas.android.com/apk/res/android">
     <name>Alibi</name>
@@ -13,7 +13,7 @@
 
 	<icon src="logo_1024.jpg" width="1024" height="1024" />
 
-	<icon src="logo.png" />
+	<icon src="logo_1024.jpg" />
 
 
 <access origin="*" />
@@ -73,7 +73,7 @@
     </platform>
 
 	<gap:config-file platform="ios" parent="CFBundleShortVersionString">
-    <string>100</string>
+    <string>1.5.1</string>
 </gap:config-file>
 
 <preference name="android-build-tool" value="gradle" /> 
