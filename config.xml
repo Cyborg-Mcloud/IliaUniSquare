@@ -30,14 +30,14 @@
 
 
 <platform name="ios">
-		<icon gap:platform="ios" src="logo_1024.png" width="1024" height="1024" />
-		<icon gap:platform="ios" width="40" height="40" src="logo-40.png"  />
-		<icon gap:platform="ios" width="80" height="80" src="icon-40-2x.png"  />
-		<icon gap:platform="ios" width="57" height="57" src="icon_57.png"  />
-		<icon gap:platform="ios" width="72" height="72" src="icon_72.png"  />
-		<icon gap:platform="ios" width="114" height="114" src="icon-57-2x.png" />
-		<icon gap:platform="ios" width="144" height="144" src="icon-72-2x.png"  />
-		<icon gap:platform="ios" width="120" height="120" src="icon_120.png"  />
+		<icon gap:platform="ios" src="logo_1024.jpg" width="1024" height="1024" />
+		<icon gap:platform="ios" width="40" height="40" src="logo-40.jpg"  />
+		<icon gap:platform="ios" width="80" height="80" src="icon-40-2x.jpg"  />
+		<icon gap:platform="ios" width="57" height="57" src="icon_57.jpg"  />
+		<icon gap:platform="ios" width="72" height="72" src="icon_72.jpg"  />
+		<icon gap:platform="ios" width="114" height="114" src="icon-57-2x.jpg" />
+		<icon gap:platform="ios" width="144" height="144" src="icon-72-2x.jpg"  />
+		<icon gap:platform="ios" width="120" height="120" src="icon_120.jpg"  />
 
         <allow-intent href="itms:smartgps.ge"/>
         <allow-intent href="itms-apps:smartgps.ge"/>
