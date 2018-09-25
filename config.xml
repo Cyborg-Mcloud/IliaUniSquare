@@ -3,8 +3,8 @@
 <widget xmlns     = "http://www.w3.org/ns/widgets"
 		xmlns:gap = "http://phonegap.com/ns/1.0"
         id        = "com.designge.iliauni"
-	    versionCode="15" 
-        version   = "1.5.6"
+	    versionCode="16" 
+        version   = "1.5.7"
 		package="com.designge.iliauni"
 		xmlns:android="http://schemas.android.com/apk/res/android">
     <name>Alibi</name>
@@ -74,7 +74,7 @@
     </platform>
 
 	<gap:config-file platform="ios" parent="CFBundleShortVersionString">
-    <string>1.5.1</string>
+    <string>1.5.7</string>
 </gap:config-file>
 
 <preference name="android-build-tool" value="gradle" /> 
@@ -85,7 +85,7 @@
 <!--	<preference name="fullscreen" value="true" />-->
 	<preference name="webviewbounce" value="true" />  
 	<preference name="DisallowOverscroll" value="false" />
-	<preference name="stay-in-webview"            value="false" /> 
+	<preference name="stay-in-webview"            value="true" /> 
 
 <preference name="exit-on-suspend"            value="false" />          
 <preference name="show-splash-screen-spinner" value="false" />    
