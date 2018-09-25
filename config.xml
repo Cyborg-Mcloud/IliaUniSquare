@@ -10,10 +10,10 @@
     <name>Alibi</name>
 
 	
-
+	<icon src="icon_1024.jpg" />
 	<icon src="icon_1024.jpg" width="1024" height="1024" />
 
-	<icon src="icon_1024.jpg" />
+
 
 
 <access origin="*" />
