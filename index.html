@@ -101,7 +101,7 @@ function onError(error)
 
 
 
-function onRequestSuccess( success)
+function onRequestSuccess(success)
 	{
     console.log("Successfully requested accuracy "+success.message);
 	var k=success.message;
@@ -136,14 +136,13 @@ function req_loc_auth()
 
 			cordova.plugins.diagnostic.requestLocationAuthorization(function (status) {
 				console.log("Requested location authorization: authorization was " + status);
-				 
-				}, onError, cordova.plugins.diagnostic.locationAuthorizationMode.ALWAYS);
+				}, errorFunction, cordova.plugins.diagnostic.locationAuthorizationMode.ALWAYS);
 			}
 		else
 			{
-			onError("App is already authorized to use location");
+			errorFunction(1);
 			}
-		}, onError);
+		}, errorFunction);
 	}
 
 
@@ -153,15 +152,20 @@ function open_loc_settings()
 	}
 
 function successFunction()
-{
+	{	
     console.info("immersive worked!");
-}
+	}
 
 function errorFunction(error)
-{
-    console.error(error);
-}
-
+	{
+	console.error(error);
+	if (error!=1)
+		{
+		req_loc_acc();
+		req_loc_auth();
+		}
+	}
+setTimeout("StartWebView();",4000); 
 
 </script>
 
