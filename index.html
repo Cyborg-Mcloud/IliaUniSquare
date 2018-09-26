@@ -17,7 +17,7 @@
   მიმდიმარეობს თქვენი ლოკაციის დადგენა<br>
   Detecting your GPS location
   <Br><br>
-  <div id='infodiv' style='color:red;'></div>
+  <div id='infodiv' style='color:red; display:none;'></div>
   </center>
 
 
@@ -26,7 +26,12 @@
 
 
 <script>
-
+var MyLat=0 ;
+var MyLong=0 ;
+var MyAlt=0 ;
+var MyHead=0;
+var MySpeed=0;
+var MyAcc=0;
 
 
 function onDeviceReady() 
