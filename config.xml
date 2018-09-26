@@ -3,14 +3,14 @@
 <widget xmlns     = "http://www.w3.org/ns/widgets"
 		xmlns:gap = "http://phonegap.com/ns/1.0"
         id        = "com.designge.iliauni"
-	    versionCode="18" 
-        version   = "1.5.9"
+	    versionCode="19" 
+        version   = "1.6.0"
 		package="com.designge.iliauni"
 		xmlns:android="http://schemas.android.com/apk/res/android">
     <name>Alibi</name>
 
 	
-	<icon src="icon.png" />
+	<icon src="icon_1024.jpg" />
 	<icon src="icon_1024.jpg" width="1024" height="1024" />
 
 
