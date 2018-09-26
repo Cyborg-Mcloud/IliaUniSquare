@@ -3,8 +3,8 @@
 <widget xmlns     = "http://www.w3.org/ns/widgets"
 		xmlns:gap = "http://phonegap.com/ns/1.0"
         id        = "com.designge.iliauni"
-	    versionCode="17" 
-        version   = "1.5.8"
+	    versionCode="18" 
+        version   = "1.5.9"
 		package="com.designge.iliauni"
 		xmlns:android="http://schemas.android.com/apk/res/android">
     <name>Alibi</name>
@@ -23,7 +23,7 @@
 <allow-intent href="http://*/*" launch-external="yes"/>
 	<allow-intent href="https://*/*" launch-external="yes"/>
  <platform name="android">
-        <preference name="android-minSdkVersion" value="11" />
+        <preference name="android-minSdkVersion" value="14" />
         <allow-intent href="market:*" />
     </platform>
 
@@ -91,7 +91,7 @@
 <preference name="show-splash-screen-spinner" value="false" />    
 <preference name="auto-hide-splash-screen"    value="false" />
 <preference name="disable-cursor"             value="false" />
-<preference name="android-minSdkVersion"      value="11" />         
+<preference name="android-minSdkVersion"      value="14" />         
 <preference name="android-installLocation"    value="auto" />
 <preference name="EnableViewportScale"    value="true" />
 
