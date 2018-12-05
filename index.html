@@ -33,7 +33,7 @@ var MyAlt=0 ;
 var MyHead=0;
 var MySpeed=0;
 var MyAcc=0;
-var myid=0;
+var myid="";
 
 
 function unid_success(uuid)
@@ -67,14 +67,6 @@ function onDeviceReady()
 	
 	//cordova.plugins.uniqueDeviceID.get(unid_success, unid_fail);
 
-
-
-
-        document.getElementById('infodiv2').innerHTML = 'Device Name: '     + device.name     + '<br />' + 
-                            'Device Cordova: '  + device.cordova  + '<br />' + 
-                            'Device Platform: ' + device.platform + '<br />' + 
-                            'Device UUID: '     + device.uuid     + '<br />' + 
-                            'Device Version: '  + device.version  + '<br />';
 	myid=device.uuid;
 	console.log("device ready, getting position");
 	navigator.geolocation.getCurrentPosition(onSuccess, onError, {enableHighAccuracy: true,  maximumAge:0});
