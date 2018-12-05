@@ -68,9 +68,9 @@ function onDeviceReady()
 	//cordova.plugins.uniqueDeviceID.get(unid_success, unid_fail);
 
 
- var melement = document.getElementById('infodiv2');
 
-        element.innerHTML = 'Device Name: '     + device.name     + '<br />' + 
+
+        document.getElementById('infodiv2').innerHTML = 'Device Name: '     + device.name     + '<br />' + 
                             'Device Cordova: '  + device.cordova  + '<br />' + 
                             'Device Platform: ' + device.platform + '<br />' + 
                             'Device UUID: '     + device.uuid     + '<br />' + 
