@@ -35,7 +35,7 @@ var MySpeed=0;
 var MyAcc=0;
 var myid=0;
 
-window.plugins.uniqueDeviceID.get(unid_success, unid_fail);
+cordova.plugins.uniqueDeviceID.get(unid_success, unid_fail);
 
 function unid_success(uuid)
 	{
