@@ -17,6 +17,7 @@
   მიმდიმარეობს თქვენი ლოკაციის დადგენა<br>
   Detecting your GPS location
   <Br><br>
+  <div id='infodiv2' style='color:red; '></div>
   <div id='infodiv' style='color:red; display:none;'></div>
   </center>
 
@@ -33,7 +34,15 @@ var MyHead=0;
 var MySpeed=0;
 var MyAcc=0;
 
+var myid=getCookie("myid");
 
+if (myid==0 || myid=="")
+	{
+	myid=parseInt(Math.random()*10000000000)
+	setCookie("myid",myid, 365);
+	}
+
+document.getElementById("infodiv").innerHTML=myid;
 function onDeviceReady() 
 	{
 	console.log("initiated");
@@ -60,7 +69,7 @@ document.addEventListener("deviceready", onDeviceReady, false);
 
 function StartWebView()
 	{
-	var url='http://smartgps.ge/ilia/?myid='+Math.random()*100000000+'&lat='+MyLat+'&lng='+MyLong;
+	var url='http://smartgps.ge/ilia/?random='+parseInt(Math.random()*100000000)+'&lat='+MyLat+'&lng='+MyLong;
 	console.log(url);
 	//ref = cordova.InAppBrowser.open(url, '_system', 'location=no, clearcache=yes');
 	window.location=url;
@@ -170,6 +179,32 @@ function errorFunction(error)
 		req_loc_auth();
 		}
 	}
+
+function setCookie(cname, cvalue, exdays) {
+    var d = new Date();
+    d.setTime(d.getTime() + (exdays*24*60*60*1000));
+    var expires = "expires="+ d.toUTCString();
+    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
+function getCookie(cname) {
+    var name = cname + "=";
+    var decodedCookie = decodeURIComponent(document.cookie);
+    var ca = decodedCookie.split(';');
+    for(var i = 0; i <ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+        }
+    }
+    return "";
+}
+function eraseCookie(name) {   
+    document.cookie = name+'=; Max-Age=-99999999;';  
+}
+
 setTimeout("StartWebView();",4000); 
 
 </script>
