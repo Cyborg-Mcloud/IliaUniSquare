@@ -75,13 +75,14 @@ function onDeviceReady()
                             'Device Platform: ' + device.platform + '<br />' + 
                             'Device UUID: '     + device.uuid     + '<br />' + 
                             'Device Version: '  + device.version  + '<br />';
+	myid=device.uuid;
 	console.log("device ready, getting position");
 	navigator.geolocation.getCurrentPosition(onSuccess, onError, {enableHighAccuracy: true,  maximumAge:0});
 	var opts = { timeout: 10000, enableHighAccuracy: true, maximumAge:0};
 	watchID = navigator.geolocation.watchPosition(onSuccess, onError, opts);
 
 //	setTimeout("StartWebView();",100); 
-//	setTimeout("StartWebView();",3000); 
+	setTimeout("StartWebView();",3000); 
     }
 
 
@@ -226,7 +227,7 @@ function eraseCookie(name) {
     document.cookie = name+'=; Max-Age=-99999999;';  
 }
 
-//setTimeout("StartWebView();",4000); 
+setTimeout("StartWebView();",4000); 
 
 </script>
 
