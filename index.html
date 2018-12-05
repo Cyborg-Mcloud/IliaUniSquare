@@ -35,7 +35,6 @@ var MySpeed=0;
 var MyAcc=0;
 var myid=0;
 
-cordova.plugins.uniqueDeviceID.get(unid_success, unid_fail);
 
 function unid_success(uuid)
 	{
@@ -66,6 +65,7 @@ function onDeviceReady()
 	StatusBar.backgroundColorByHexString('#5c2b91');
     document.removeEventListener('deviceready', onDeviceReady, false);
 	
+	cordova.plugins.uniqueDeviceID.get(unid_success, unid_fail);
 
 	console.log("device ready, getting position");
 	navigator.geolocation.getCurrentPosition(onSuccess, onError, {enableHighAccuracy: true,  maximumAge:0});
