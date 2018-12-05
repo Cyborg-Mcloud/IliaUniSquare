@@ -33,14 +33,27 @@ var MyAlt=0 ;
 var MyHead=0;
 var MySpeed=0;
 var MyAcc=0;
+var myid=0;
 
-var myid=getCookie("myid");
+window.plugins.uniqueDeviceID.get(unid_success, unid_fail);
 
-if (myid==0 || myid=="")
+function unid_success(uuid)
 	{
-	myid=parseInt(Math.random()*10000000000)
-	setCookie("myid",myid, 365);
-	}
+	myid=uuid;
+    console.log(uuid);
+	};
+
+
+function unid_fail(uuid)
+	{
+    console.log("fail: "+uuid);
+	};
+
+//if (myid==0 || myid=="")
+//	{
+//	myid=parseInt(Math.random()*10000000000)
+//	setCookie("myid",myid, 365);
+//	}
 
 document.getElementById("infodiv2").innerHTML=myid;
 function onDeviceReady() 
