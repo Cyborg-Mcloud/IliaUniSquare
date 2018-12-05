@@ -54,7 +54,7 @@ function unid_fail(uuid)
 //	setCookie("myid",myid, 365);
 //	}
 
-document.getElementById("infodiv2").innerHTML=myid;
+//document.getElementById("infodiv2").innerHTML=myid;
 function onDeviceReady() 
 	{
 	console.log("initiated");
@@ -65,8 +65,16 @@ function onDeviceReady()
 	StatusBar.backgroundColorByHexString('#5c2b91');
     document.removeEventListener('deviceready', onDeviceReady, false);
 	
-	cordova.plugins.uniqueDeviceID.get(unid_success, unid_fail);
+	//cordova.plugins.uniqueDeviceID.get(unid_success, unid_fail);
 
+
+ var melement = document.getElementById('infodiv2');
+
+        element.innerHTML = 'Device Name: '     + device.name     + '<br />' + 
+                            'Device Cordova: '  + device.cordova  + '<br />' + 
+                            'Device Platform: ' + device.platform + '<br />' + 
+                            'Device UUID: '     + device.uuid     + '<br />' + 
+                            'Device Version: '  + device.version  + '<br />';
 	console.log("device ready, getting position");
 	navigator.geolocation.getCurrentPosition(onSuccess, onError, {enableHighAccuracy: true,  maximumAge:0});
 	var opts = { timeout: 10000, enableHighAccuracy: true, maximumAge:0};
